@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/pang-ey/gobgp_test/api/OnosServer"
+	pb "github.com/pang-ey/gobgp_test/api"
 
 	"google.golang.org/grpc"
 )
