@@ -1,11 +1,11 @@
 syntax = "proto3";
 
 // option java_multiple_files = true;
-option go_package = "main";
+option go_package = "pang";
 // option java_outer_classname = "PangGrpcServer";
 option java_generic_services = true;
 
-package main;
+package pang;
 // package grpcserver;
 
 service OnosServer {
