@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// option java_multiple_files = true;
+option go_package = "com/pang";
+// option java_outer_classname = "PangGrpcServer";
+option java_generic_services = true;
+
+package pang;
+// package grpcserver;
+
+service OnosServer {
+    rpc EvpnRoute (OnosRequest) returns (OnosReply) {}
+}
+
+message OnosRequest {
+    string message = 1;
+}
+
+message OnosReply {
+    string message = 2;
+}

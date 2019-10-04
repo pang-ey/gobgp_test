@@ -148,6 +148,8 @@ func main() {
 		grpcOpts = append(grpcOpts, grpc.Creds(creds))
 	}
 
+	Helloworld()
+
 	log.Info("gobgpd started")
 	bgpServer := server.NewBgpServer(server.GrpcListenAddress(opts.GrpcHosts), server.GrpcOption(grpcOpts))
 	go bgpServer.Serve()
