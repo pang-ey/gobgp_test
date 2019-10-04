@@ -2,10 +2,11 @@ package main
 
 import (
 	"context"
-	"log"
 	"time"
 
-	pb "github.com/pang-ey/gobgp_test/api"
+	log "github.com/sirupsen/logrus"
+
+	pb "github.com/pang-ey/gobgp_test/onos"
 
 	"google.golang.org/grpc"
 )
@@ -32,5 +33,5 @@ func Helloworld() {
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
-	log.Printf("Reply: %s", r.Message)
+	log.Info("Reply: ", r.Message)
 }
