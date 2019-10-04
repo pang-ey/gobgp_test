@@ -19,8 +19,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/osrg/gobgp/internal/pkg/apiutil"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	"github.com/pang-ey/gobgp_test/internal/pkg/apiutil"
+	"github.com/pang-ey/gobgp_test/pkg/packet/bgp"
 	"github.com/stretchr/testify/assert"
 )
 

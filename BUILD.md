@@ -5,7 +5,7 @@
 You need a working [Go environment](https://golang.org/doc/install) (1.11 or newer) with the module support enabled.
 
 ```bash
-$ git clone git://github.com/osrg/gobgp
+$ git clone git://github.com/pang-ey/gobgp_test
 $ cd gobgp && go mod download
 ```
 
@@ -43,9 +43,9 @@ If you have a non-standard release and want to have more build information there
 
 ```bash
 go build -ldflags \
-	"-X github.com/osrg/gobgp/internal/pkg/version.COMMIT=`git rev-parse --short HEAD` \
-	 -X github.com/osrg/gobgp/internal/pkg/version.METADATA="date.`date "+%Y%m%d"`" \
-	 -X github.com/osrg/gobgp/internal/pkg/version.IDENTIFIER=alpha"
+	"-X github.com/pang-ey/gobgp_test/internal/pkg/version.COMMIT=`git rev-parse --short HEAD` \
+	 -X github.com/pang-ey/gobgp_test/internal/pkg/version.METADATA="date.`date "+%Y%m%d"`" \
+	 -X github.com/pang-ey/gobgp_test/internal/pkg/version.IDENTIFIER=alpha"
 ```
 
 This will produce a version number of

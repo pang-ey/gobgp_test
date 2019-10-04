@@ -1,8 +1,9 @@
-module github.com/osrg/gobgp
+module github.com/pang-ey/gobgp_test
 
 go 1.13
 
 require (
+	github.com/BurntSushi/toml v0.3.1
 	github.com/armon/go-radix v1.0.0
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f
 	github.com/dgryski/go-farm v0.0.0-20190423205320-6a90982ecee2
@@ -12,7 +13,9 @@ require (
 	github.com/google/uuid v1.1.1
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/kr/pretty v0.1.0
+	github.com/osrg/gobgp v2.0.0+incompatible
 	github.com/sirupsen/logrus v1.4.2
+	github.com/spf13/cobra v0.0.5
 	github.com/spf13/viper v1.4.0
 	github.com/stretchr/testify v1.2.2
 	github.com/vishvananda/netlink v1.0.0

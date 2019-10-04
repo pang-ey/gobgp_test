@@ -8,7 +8,7 @@ mkdir -p /usr/local/jenkins/src/github.com/osrg/
 export GOBGP_IMAGE=gobgp
 export GOPATH=/usr/local/jenkins
 export GOROOT=/usr/local/go
-export GOBGP=/usr/local/jenkins/src/github.com/osrg/gobgp
+export GOBGP=/usr/local/jenkins/src/github.com/pang-ey/gobgp_test
 export WS=`pwd`
 
 # clear docker.log

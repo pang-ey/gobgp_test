@@ -3,7 +3,7 @@ module gobgp {
   yang-version "1";
 
   // namespace
-  namespace "https://github.com/osrg/gobgp";
+  namespace "https://github.com/pang-ey/gobgp_test";
 
   prefix "gobgp";
 

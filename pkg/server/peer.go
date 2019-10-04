@@ -20,9 +20,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/osrg/gobgp/internal/pkg/config"
-	"github.com/osrg/gobgp/internal/pkg/table"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	"github.com/pang-ey/gobgp_test/internal/pkg/config"
+	"github.com/pang-ey/gobgp_test/internal/pkg/table"
+	"github.com/pang-ey/gobgp_test/pkg/packet/bgp"
 
 	log "github.com/sirupsen/logrus"
 )

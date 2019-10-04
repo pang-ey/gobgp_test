@@ -11,7 +11,7 @@ How to use
 ==========
 Set the environment variables for this tool::
 
-   $ GOBGP_PATH=$GOPATH/src/github.com/osrg/gobgp/
+   $ GOBGP_PATH=$GOPATH/src/github.com/pang-ey/gobgp_test/
 
 Clone the required resources by using Git::
 
