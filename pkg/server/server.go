@@ -36,6 +36,7 @@ import (
 	"github.com/pang-ey/gobgp_test/internal/pkg/table"
 	"github.com/pang-ey/gobgp_test/internal/pkg/zebra"
 	"github.com/pang-ey/gobgp_test/pkg/packet/bgp"
+	"github.com/pang-ey/gobgp_test/cmd/gobgpd/pang"
 )
 
 type tcpListener struct {
@@ -1977,6 +1978,7 @@ func (s *BgpServer) AddPath(ctx context.Context, r *api.AddPathRequest) (*api.Ad
 	var uuidBytes []byte
 	err := s.mgmtOperation(func() error {
 		path, err := api2Path(r.TableType, r.Path, false)
+		Helloworld("second world")
 		if err != nil {
 			return err
 		}

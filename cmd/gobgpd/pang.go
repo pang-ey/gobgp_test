@@ -16,7 +16,8 @@ const (
 	defaultName = "Nothing happens"
 )
 
-func Helloworld() {
+// send message by grpc
+func Helloworld(param string) {
 	// fmt.Println("hello pang")
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
 	if err != nil {
@@ -26,6 +27,9 @@ func Helloworld() {
 	c := pb.NewOnosServerClient(conn)
 
 	name := defaultName
+	if len(param) > 0 {
+		name = param
+	}
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()

@@ -148,7 +148,7 @@ func main() {
 		grpcOpts = append(grpcOpts, grpc.Creds(creds))
 	}
 
-	Helloworld()
+	Helloworld("Hello world")
 
 	log.Info("gobgpd started")
 	bgpServer := server.NewBgpServer(server.GrpcListenAddress(opts.GrpcHosts), server.GrpcOption(grpcOpts))
