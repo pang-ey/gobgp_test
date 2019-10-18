@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	address     = "localhost:50052"
+	address     = "192.168.232.142:50052"
 	defaultName = "Nothing happens"
 )
 
