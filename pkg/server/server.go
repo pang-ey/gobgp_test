@@ -36,7 +36,7 @@ import (
 	"github.com/pang-ey/gobgp_test/internal/pkg/table"
 	"github.com/pang-ey/gobgp_test/internal/pkg/zebra"
 	"github.com/pang-ey/gobgp_test/pkg/packet/bgp"
-	"github.com/pang-ey/gobgp_test/cmd/gobgpd"
+	gobgpd "github.com/pang-ey/gobgp_test/pang"
 )
 
 type tcpListener struct {
@@ -1793,9 +1793,9 @@ func (s *BgpServer) SetPolicies(ctx context.Context, r *api.SetPoliciesRequest) 
 		if err != nil {
 			return nil, err
 		}
-		c.Config.ExportPolicyList = policies
-		c.Config.DefaultExportPolicy = rt
-		return c, nil
+		c.Config.ExpoHello
+		c.Config.DefaHello
+		return c, nilHello
 	}
 
 	return s.mgmtOperation(func() error {
@@ -1978,7 +1978,7 @@ func (s *BgpServer) AddPath(ctx context.Context, r *api.AddPathRequest) (*api.Ad
 	var uuidBytes []byte
 	err := s.mgmtOperation(func() error {
 		path, err := api2Path(r.TableType, r.Path, false)
-		Helloworld("second world")
+		gobgpd.Helloworld("second world")
 		if err != nil {
 			return err
 		}
