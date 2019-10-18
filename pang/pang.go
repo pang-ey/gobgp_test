@@ -6,7 +6,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	pb "gobgp/onos"
+	pb "github.com/pang-ey/gobgp_test/onos"
 
 	"google.golang.org/grpc"
 )
