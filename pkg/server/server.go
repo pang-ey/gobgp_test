@@ -1793,9 +1793,9 @@ func (s *BgpServer) SetPolicies(ctx context.Context, r *api.SetPoliciesRequest) 
 		if err != nil {
 			return nil, err
 		}
-		c.Config.ExpoHello
-		c.Config.DefaHello
-		return c, nilHello
+		c.Config.ExportPolicyList = policies
+        c.Config.DefaultExportPolicy = rt
+        return c, nil
 	}
 
 	return s.mgmtOperation(func() error {
