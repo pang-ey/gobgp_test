@@ -36,7 +36,7 @@ import (
 	"github.com/pang-ey/gobgp_test/internal/pkg/table"
 	"github.com/pang-ey/gobgp_test/internal/pkg/zebra"
 	"github.com/pang-ey/gobgp_test/pkg/packet/bgp"
-	"github.com/pang-ey/gobgp_test/cmd/gobgpd/pang"
+	"github.com/pang-ey/gobgp_test/cmd/gobgpd"
 )
 
 type tcpListener struct {
